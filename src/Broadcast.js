@@ -180,11 +180,11 @@ class Broadcast {
    * Center a string in the middle of a given width
    * @param {number} width
    * @param {string} message
-   * @param {string} color
+   * @param {?string} color
    * @param {?string} fillChar Character to pad with, defaults to ' '
    * @return {string}
    */
-  static center(width, message, color, fillChar = " ") {
+  static center(width, message, color = '', fillChar = " ") {
     const padWidth = width / 2 - message.length / 2;
     let openColor = '';
     let closeColor = '';
